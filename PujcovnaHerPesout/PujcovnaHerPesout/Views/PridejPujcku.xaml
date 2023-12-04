@@ -1,0 +1,15 @@
+﻿<Window x:Class="PujcovnaHerPesout.Views.PridejPujcku"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PridejPujcku" Height="250" Width="830" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="25" Margin="225,175,10,10" Command="{Binding OkCommand}"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="25" Margin="10,175,10,10" Command="{Binding CancelCommand}"/>
+        <Label Content="Pobočka:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <Label Content="Uživatel:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
+        <ComboBox x:Name="comboBoxPobocka"  HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="auto" Height="25" Margin="75,50,530,0" SelectedItem="{Binding SelectedPobocka}" ItemsSource="{Binding PobockyItems}"/>
+        <ComboBox x:Name="comboBoxUzivatel" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="auto" Height="25" Margin="75,100,530,0" SelectedItem="{Binding SelectedUzivatel}" ItemsSource="{Binding UzivateleItems}"/>
+        <ListBox x:Name="listBoxHry" FontFamily="Consolas" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="auto" Width="auto" Margin="310,10,10,10" SelectedItem="{Binding SelectedHra}" ItemsSource="{Binding HryItems}"/>
+        <Label Content="Hry:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,10,0,0"/>
+    </Grid>
+</Window>

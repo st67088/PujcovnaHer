@@ -1,0 +1,21 @@
+﻿<Window x:Class="PujcovnaHerPesout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PujcovnaHerPesout.ViewModel"
+        Title="Pujcovna her" Height="400" Width="1000" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    
+    <Grid>
+        <Label Content="{Binding LabelCoProhlizis}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,1,0,0" />
+        <ListBox x:Name="listBox" ItemsSource="{Binding FilteredListBoxItems}" SelectedItem="{Binding SelectedListBoxItem, Mode=TwoWay}" FontFamily="Consolas" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="890" Height="290" Margin="10,27,0,0"/>
+        <Button Content="Přidej" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="23" Margin="10,0,0,10" Command="{Binding ButtonPridejCommand}"/>
+        <Button Content="Odeber" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="23" Margin="90,0,0,10" Command="{Binding ButtonOdeberCommand}"/>
+        <Button Content="Uprav" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="23" Margin="170,0,0,10" Command="{Binding ButtonUpravCommand}"/>
+        <Button Content="Pobočky" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="23" Margin="0,27,9,0" Command="{Binding ButtonPobockyCommand}"/>
+        <Button Content="Hry" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="23" Margin="0,55,9,0" Command="{Binding ButtonHryCommand}"/>
+        <Button Content="Uživatelé" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="23" Margin="0,83,9,0" Command="{Binding ButtonUzivateleCommand}"/>
+        <Button Content="Půjčené hry" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="43" Margin="0,111,9,0" Command="{Binding ButtonPujceneCommand}"/>
+        <Button Content="Konec" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="64" Height="23" Margin="0,0,8,10" Command="{Binding ButtonKonecCommand}"/>
+        <TextBox Text="{Binding TextBoxNajdiHruText}" Visibility="{Binding TextBoxNajdiHruVisibility}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="23" Margin="0,187,9,0"/>
+        <Button Content="Najdi hru" Visibility="{Binding ButtonNajdiHruVisibility}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="65" Height="23" Margin="0,159,9,0" Command="{Binding ButtonNajdiHruCommand}"/>
+    </Grid>
+</Window>

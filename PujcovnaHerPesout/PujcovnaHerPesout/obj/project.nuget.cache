@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vYAgMoRCib0G+0/5aSA2PzvfVktN7dHJPgapgRWU0z4VScSdShRXdL6ULYjgGWcxeuR6OAPvX8u3Va3RpVwDFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Uživatel\\Desktop\\PujcovnaHerPesout\\PujcovnaHerPesout\\PujcovnaHerPesout\\PujcovnaHerPesout.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Uživatel\\.nuget\\packages\\litedb\\5.0.17\\litedb.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
